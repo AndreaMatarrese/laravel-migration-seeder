@@ -18,6 +18,11 @@ class CreateTrainsTable extends Migration
             $table->string('company', 50);
             $table->string('start');
             $table->string('stop');
+            $table->string('time_start');
+            $table->string('time_stop');
+            $table->integer('code');
+            $table->string('carriage');
+            $table->boolean('cancelled');
             $table->timestamps();
         });
     }
